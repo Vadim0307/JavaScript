@@ -1,20 +1,19 @@
-const string = "proba1 proba1111 proba12 proba123 proba999999999";
-  
-let array = string.split(" ");
-let maxWord = "";
-let maxWordLength = 0;
+// function changeEven (numbers, value) {
+//   // Change code below this line
+const newNumbers = [];
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers);
+const value = 10;
 
-for (let i = 0; i < array.length; i += 1) {
-  
-  if (array[i].length > maxWordLength) {
-      maxWordLength = array[i].length;
-      maxWord = array[i];
-      console.log("i =", i);
-      console.log(array[i]);
-      console.log(array[i].length);
-      console.log("maxWord =", maxWord);
-      
- }
-
-}
- 
+numbers.forEach(function (element) {
+if (element % 2 === 0) {
+newNumbers.push(element + value);
+console.log(`element ${element}`);
+console.log(newNumbers);}
+newNumbers.push(element);
+console.log(`element ${element}`);
+console.log(newNumbers); }
+);
+// return newNumbers;
+//   // Change code above this line
+// }
